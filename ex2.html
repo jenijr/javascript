@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercise</title>
+</head>
+<body>
+    <h1 id="demo1"></h1>
+    <h2 id="demo2"></h2>
+    <h3 id="demo3"></h3>
+    <h4 id="demo4"></h4>
+    <script>
+        function addNum(num1, num2) {
+            var addnum = num1 + num2;
+            return  addnum;
+        }
+        document.getElementById('demo1').innerHTML = "The addition of the two numbers is "
+        +addNum(4, 3);
+    </script>
+    <script>
+        function multiNum(num1,num2){
+            var multinum= num1 * num2;
+            return multinum;
+        }
+        document.getElementById('demo2').innerHTML="The multiplication of the two numbers is " 
+        + multiNum (4,3);
+    </script>
+    <script>
+        function subtractNum(num1,num2){
+            var subtractnum= num1-num2;
+            return subtractnum;
+        }
+        document.getElementById('demo3').innerHTML="The subtraction of the two numbers is " 
+        + subtractNum (4,3);
+    </script>
+    <script>
+        function divideNum(num1,num2){
+            var dividenum= num1/ num2;
+            return  dividenum;
+        }
+        document.getElementById('demo4').innerHTML="The division of the two numbers is " 
+        +divideNum (4,3);
+    </script>
+    </body>
+</html>

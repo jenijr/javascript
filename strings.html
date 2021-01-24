@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+    
+    <script>
+        var x = "Hello World";//Double quote
+        document.getElementById('demo').innerHTML = x;
+    </script>
+    <script>
+        var x = 'Hello Guys';//Single quote
+        document.getElementById('demo1').innerHTML = x;
+    </script>
+    <script>
+        var answer = "She is 'Thenu'";
+        var answer1 = 'She is "Thenu"';
+
+        document.getElementById('demo2').innerHTML = answer + "<br>" + answer1;
+    </script>
+    <script>
+        var y = "abcdefg";
+        var sln = y.length;
+        document.getElementById('demo3').innerHTML = sln;
+    </script>
+    <script>
+        var a = "It is called \"Environment\"";
+        document.getElementById('demo4').innerHTML = a;
+    </script>
+    <script>
+        var b = "It\'s Alright";
+        document.getElementById('demo5').innerHTML = b;
+    </script>
+    <script>
+        var c = "The Character \\ is called Backslash";
+        document.getElementById('demo6').innerHTML = c;
+    </script>
+    <script>
+        var d = "The Character \bis called Backslash";
+        document.getElementById('demo7').innerHTML = d;
+    </script>
+    <script>
+        var e = "The Character \n is called Backslash";
+        document.getElementById('demo8').innerHTML = e;
+    </script>
+    <script>
+        var f = "The Character \f is called Backslash";
+        document.getElementById('demo9').innerHTML = f;
+    </script>
+    <script>
+        var g = "The Character \r is called Backslash";
+        document.getElementById('demo10').innerHTML = g;
+    </script>
+    <script>
+        var h = "The Character \v is called Backslash";
+        document.getElementById('demo11').innerHTML = h;
+    </script>
+    <script>
+        document.getElementById('demo12').innerHTML = "Hello\
+        Dolly!";
+    </script>
+    <script>
+        document.getElementById('demo13').innerHTML = "Hello" +
+            "Guys";
+    </script>
+    <script>
+        document.getElementById('demo14').innerHTML = \
+        "Hello Friends" //cannot break line
+    </script>
+    <script>
+        var x = "Jeni";
+        var y = new String("Jeni");
+        document.getElementById('demo15').innerHTML=typeof x + "<br>"+typeof y;
+    </script>
+    <script>
+        var x = "Jeni";
+        var y = new String("Jeni");
+        document.getElementById('demo16').innerHTML=(x==y);
+    </script>
+    <script>
+        var x = "Jeni";
+        var y = new String("Jeni");
+        document.getElementById('demo17').innerHTML=(x===y);
+    </script>
+    <script>
+        var x = new String("Jeni");
+        var y = new String("Jeni");
+        document.getElementById('demo18').innerHTML=(x==y);
+    </script>
+    <script>
+        var x = new String("Jeni");
+        var y = new String("Jeni");
+        document.getElementById('demo19').innerHTML=(x===y);
+    </script>
+</body>
+
+</html>

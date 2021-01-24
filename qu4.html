@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS If Else Exercise</title>
+</head>
+<body>
+    <h1 id="demo1"></h1>
+    
+    <script>
+        function assignColor(){
+            var Color = 15;
+            if (Color<=10){
+                msg = " Blue ";
+            }
+            else if (Color<=20){
+                msg =" Red ";
+            }
+            else if (Color<=30){
+                msg =" Green ";
+            }
+            else{
+                msg =" It is not a correct color option "
+            }
+            document.getElementById('demo1').innerHTML=msg;
+        }
+        assignColor();
+        
+    </script>
+    
+</body>
+</html>

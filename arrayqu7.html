@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Exercise</title>
+</head>
+<body>
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <script>
+        var num_arr = [7,3,4,10,2];
+        function findMax(num_arr){
+            var maxNum =num_arr[0];
+            for(var i=1;i<num_arr.length;i++){
+                if(maxNum<num_arr[i]){
+                    maxNum = num_arr[i];
+                }
+            }
+            return maxNum;
+        }
+        document.getElementById('demo1').innerHTML=findMax(num_arr);
+    </script>
+    <script>
+        var arr = [3,5,6,9,4];
+        function findMin(arr){
+            var minNum =arr[0];
+            for(var i=1;i<arr.length;i++){
+                if(minNum>arr[i]){
+                    minNum = arr[i];
+                }
+            }
+            return minNum;
+        }
+        document.getElementById('demo2').innerHTML=findMin(arr);
+    </script>
+</body>
+</html>

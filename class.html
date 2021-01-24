@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        class Fruit{
+            constructor (name,color){
+                this.name=name;
+                this.color=color;
+            }
+        }
+        Fruit1=new Fruit("Apple","Red");
+        Fruit2=new Fruit("Pineapple","Yellow")
+        document.getElementById('demo1').innerHTML=Fruit1.name+" "  //display in same line
+        +Fruit1.color+" "+Fruit2.name+" "+Fruit2.color;
+        //document.getElementById('demo2').innerHTML=Fruit2.name+" "+Fruit2.color;  display in mew line
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <script>
+        var student = ["Jeni","Thenu","Sanci","Sasee"];
+        //var student = new Array("Jeni","Thenu","Sanci","Sasee");
+        document.getElementById('demo').innerHTML=student;
+        document.getElementById('demo1').innerHTML=student[2];
+    </script>
+    <script>
+        var student = ["Jeni","Thenu","Sanci","Sasee"];
+        student[5]="Siya";
+        document.getElementById('demo2').innerHTML=student;
+        document.getElementById('demo3').innerHTML=student[4];
+    </script>
+    <script>
+        var student = ["Jeni","Thenu","Sanci","Sasee"];
+        document.getElementById('demo4').innerHTML=student.length;
+        document.getElementById('demo5').innerHTML=student[student.length-1];
+    </script>
+    <script>
+        var student = ["Jeni","Thenu","Sanci","Sasee"];
+        var tag ="<ul>"
+            for(var i=0;i<student.length;i++)
+            {
+                tag += "<li>"+student[i]+"</li>";
+            }
+            tag += "</ul>";
+            document.getElementById('demo6').innerHTML=tag;
+    </script>
+    <script>
+        var student = ["Ravi","Raju","Sasi","Ganu","Venu","Riyaz"];
+        var tag ="<ol>"
+            for(var i=0;i<student.length;i++)
+            {
+                tag += "<li>"+student[i]+"</li>";
+            }
+            tag += "</ol>";
+            document.getElementById('demo7').innerHTML=tag;
+    </script>
+    <script>
+        var student = ["Ravi","Raju","Sasi","Ganu","Venu","Riyaz"];
+        var tag ="<ol>"
+            student.forEach(nameList);
+            tag += "</ol>";
+            function nameList(value)
+            {
+                tag += "<li>"+value+"</li>";
+            }
+            
+            document.getElementById('demo8').innerHTML=tag;
+    </script>
+    
+</body>
+</html>

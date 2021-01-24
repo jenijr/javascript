@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        class student{
+            constructor(name,age){
+                this.studentname=name;
+                this.studentage=age;
+            }
+            showname(){
+                return "Student name is "+this.studentname+". His/Her age is "+this.studentage;
+            }
+        }
+        class subject extends student{
+            constructor(name,age,sub){
+                super(name,age);
+                this.subject=sub;
+            }
+            showdetail(){
+                return this.showname()+". He/She takes "+this.subject;
+            }
+        }
+        let Student1 = new subject("Jeni",20,"English");
+        let Student2 = new student("Jeni",20);
+
+        document.getElementById('demo1').innerHTML=Student1.showdetail();
+        document.getElementById('demo2').innerHTML=Student2.showname();
+        document.getElementById('demo3').innerHTML=Student2.showdetail();
+    </script>
+    
+</body>
+</html>

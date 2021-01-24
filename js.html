@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    
+
+    <script>
+        function addNum(num1,num2){
+            var addnum= num1 + num2;
+            return "The addition of the two numbers is " + addnum;
+        }
+        document.getElementById('demo1').innerHTML=addNum (4,3);
+    </script>
+     
+     <script>
+        function multiNum(num1,num2){
+            var multinum= num1 * num2;
+            return "The multiplication of the two numbers is " + multinum;
+        }
+        document.getElementById('demo2').innerHTML=multiNum (4,3);
+    </script>
+     <script>
+        function subtractNum(num1,num2){
+            var subtractnum= num1  num2;
+            return "The subtraction of the two numbers is " + subtractnum;
+        }
+        document.getElementById('demo3').innerHTML=subtractNum (4,3);
+    </script>
+    <script>
+        function divideNum(num1,num2){
+            var dividenum= num1 + num2;
+            return "The division of the two numbers is " + dividenum;
+        }
+        document.getElementById('demo4').innerHTML=divideNum (4,3);
+    </script>
+    
+</body>
+</html>

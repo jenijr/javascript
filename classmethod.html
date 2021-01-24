@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        class Student{
+            constructor(fname,lname,Birthyear){
+                this.fname=fname;
+                this.lname=lname;
+                this.Birthyear=Birthyear;
+            }
+        /*age(){
+            let date = new Date();
+            return date.getFullYear()-this.Birthyear;
+        }*/
+        age(x){
+            return x-this.Birthyear;
+        }
+        fullname(){
+            return this.fname+this.lname;
+        }
+        }
+        let date = new Date();
+        let year = date.getFullYear();
+        Student1 = new Student("Jeni"," Hillward",2001);
+        Student2 = new Student("Sopi"," Ravi",2005);
+        document.getElementById('demo1').innerHTML=Student1.fullname()+", His/Her birthday is "+Student1.age(year);
+        document.getElementById('demo2').innerHTML=Student2.fullname()+", His/Her birthday is "+Student2.age(year);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <script>
+        class student{
+            constructor(name){
+                this.studentname=name;
+            }
+            static hello(x){
+                return "Hello I'm "+x.studentname;
+            }
+        }
+        let Student1=new student("Jeni");
+        document.getElementById('demo1').innerHTML=student.hello(Student1);
+    </script>
+</body>
+</html>
